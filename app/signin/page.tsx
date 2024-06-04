@@ -34,6 +34,8 @@ export default function SignIn() {
 
     if (error) {
       alert(JSON.stringify(error));
+    } else {
+      router.push("/");
     }
   };
 
