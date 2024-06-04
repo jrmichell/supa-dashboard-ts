@@ -21,7 +21,7 @@ export default function SignIn() {
     if (error) {
       alert(JSON.stringify(error));
     } else {
-      router.push("/dashboard");
+      router.push("/");
     }
   };
 
@@ -79,7 +79,7 @@ export default function SignIn() {
 
             <button
               className="mt-10 text-lg text-white font-semibold bg-green-500 py-3 px-6 rounded-md focus:outline-none focus:ring-2"
-              type="submit"
+              onClick={handleSignIn}
             >
               Sign in with Email
             </button>
